@@ -1,54 +1,202 @@
 <html>
-<body bgcolor="#3D4574" style="margin-top:2em; margin-left:3em; margin-right:3em">
-<img src="logo.jpg" width="100%" height="30%">
-<br>
+<head>
+<title>www.kedage.in</title>
+<style>
+body {
+	margin:0;
+	background-image:url("Background.png");
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #232843;}
+
+.topnav a {
+  float: right;
+  display: 
+
+block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #cdd0e5;
+  color: #353c64;
+}
+
+.topnav a.active {
+    
+
+background-color: #7983b9;
+    color: white;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #232843;
+    overflow-x: hidden;
+   
+
+ transition: 0.5s;
+    padding-top: 60px;
+}
+
+.topnav span {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  cursor: 
+
+pointer;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #abb1d3;
+    display: block;
+    transition: 0.3s
+}
+
+
+.sidenav a:hover, .offcanvas a:focus{
+     
+
+ color: white;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+	color: #ffffff;
+    text-align: center;
+    top: 3px;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+	cursor: pointer;	
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = 
+
+"250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head>
+
+<body >
+
+<div id="mySidenav" class="sidenav" onclick="closeNav()">
+  <span class="closebtn" 
+
+>Kedage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&times;</span>
+  <a href="#About">About</a>
+  <a href="#Product">Products</a>
+  <a href="#Feedback">Feedback</a>
+</div>
+
+<div class="topnav" id="myTopnav">
+	<a 
+
+href="#Feedback">Feedback</a>
+	<a href="#About">About</a>
+	<span onclick="openNav()">&#9776</span>  
+</div>
+
 <br>
 <div align="center">
-	<font size="5em" color="#cdd0e5">
+<img src="logo.jpg" align="middle">
+</div>
+<br>
+<br>
+
+<div 
+
+align="center">
+	<font size="5em" >
 		<b>
-			Kedage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ಕೇದಗೆ  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  केदगे
-		</b>
+			Kedage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ಕೇದಗೆ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;केदगे		</b>
 	</font>
 </div>
+
 <p style="margin:1em">
-	<font size="4em" color="#cdd0e5">
+	
+
+<font size="4em" >
 		<b>
-			Why choose KEDAGE home-made pickles?
+			<a id="About">Why choose KEDAGE home-made pickles?</a>
 		</b>
 		<br><br>
 		<i>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An authentic Indian pickle hand-crafted with crisp chunks of hand-picked raw mangoes mixed with spices like Garlic, Mustard, Fenugreek Cumin, Turmeric and Asafoetida a natural acidity regulator all dipped in edible oil and salt to preserve it for long.<br>
-		   Share your experience with us.
+			
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; An authentic Indian pickle hand-crafted with crisp chunks of hand-picked raw mangoes mixed with Garlic, spices like Mustard, Fenugreek, Cumin, Turmeric and Asafoetida 
+
+a natural acidity regulator all dipped in edible oil and salt to preserve it for long. No additional preservative added.Share your experience with us.
 		</i>
 		<br><br><br>
 
-		<div style="float: left;">
+		
+
+<div style="float: left;margin-left:1em" >
 		<b>
 			Ingredients:
 		</b>
 		<br><br>
 		<i>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mango, Garlic, Edible Oil, Chilli powder<br>
+			
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mango, Garlic, Edible Oil, Chilli powder<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mixed spices, Asafoetida, Tumeric & Salt
 		</i>
-		</div>
+		
 
+</div>
 
-
-		<div style="float: right;">
+		<div style="float: right;margin-right:1em">
 		<br><br><br>
 		<b>
-			Crafted at:<br>
+			<a id="Feedback">Crafted at:</a><br>
 		</b>
 		<br>
-		<i>
+		
+
+<i>
 			Kedage & Co.<br>
 			Varwadi, Pernankila,<br>
 			Udupi-576113<br>
 			Call us @ +91 7337836528<br>
-			kedagenco@gmail.com
+			
+
+info@kedage.in
 		</i>
 		</div>
 	</font>
 </p>
+
 </body>
