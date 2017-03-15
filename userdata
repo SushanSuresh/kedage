@@ -1,0 +1,9 @@
+yum install wget httpd git -y
+cd /var/www/html/
+git clone https://github.com/SushanSuresh/kedage.git
+chmod 444 -R kedage
+rm -f /etc/httpd/conf/httpd.conf
+aws s3 cp s3://kedage/httpd.conf /etc/httpd/conf/
+groupadd kedage
+useradd kedage -g kedage
+service httpd start
