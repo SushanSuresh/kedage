@@ -1,7 +1,38 @@
 <html>
 <head>
 <title>www.kedage.in</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
+
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #232843;
+}
+
+.carousel-indicators li {
+    border-color: white;
+}
+
+.carousel-indicators li.active {
+    background-color: #abb1d3;
+}
+
+
+a.blackAnchor {
+	color: BLACK;
+}
+a.blackAnchor:visited {
+	color: BLACK;
+}
+a.blackAnchor:hover {
+	color: BLACK;
+	text-decoration:none;
+}
+
 body {
 	margin:0;
 	background: linear-gradient(to top, #5864a7, white);
@@ -113,9 +144,7 @@ function closeNav() {
 <body >
 
 <div id="mySidenav" class="sidenav" onclick="closeNav()">
-  <span class="closebtn" 
-
->Kedage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&times;</span>
+  <span class="closebtn">Kedage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&times;</span>
   <a href="#About">About</a>
   <a href="#Product">Products</a>
   <a href="#Feedback">Feedback</a>
@@ -129,16 +158,19 @@ href="#Feedback" onclick="closeNav()">Feedback</a>
 	<span onclick="openNav()">&#9776</span>  
 </div>
 <br>
-<div align="center">
-<img src="logo.jpg" align="middle">
+
+<div class="container">
+    <div class="row">
+      <div class="col-lg-2"></div>
+        <div class="col-lg-8"><img class="img-responsive center-block" src="logo.jpg"/></div>
+      <div class="col-lg-2"></div>
+    </div>
 </div>
 <br>
 <br>
 
-<div 
-
-align="center">
-	<font size="5em" >
+<div align="center">
+	<font size="5em" color="BLACK">
 		<b>
 			Kedage&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ಕೇದಗೆ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;केदगे		</b>
 	</font>
@@ -149,9 +181,10 @@ align="center">
 
 <font size="4em" >
 		<b>
-			<a id="About">Why choose KEDAGE home-made pickles?</a>
+			<a id="About" class="blackAnchor">Why choose KEDAGE home-made pickles?</a>
 		</b>
 		<br><br>
+<font color="BLACK">
 		<i>
 			
 
@@ -159,12 +192,42 @@ align="center">
 
 a natural acidity regulator all dipped in edible oil and salt to preserve it for long. No additional preservative added.Share your experience with us.
 		</i>
+
 		<br><br><br>
-<img src="Rawmangowithtree.jpg"  widht="375" height="250">
-<img src="Cutmango.jpg"  widht="375" height="250"><br><br>
+
+
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active" align="center">
+	<img src="Rawmangowithtree.jpg">
+    </div>
+    <div class="item" align="center">
+	<img src="Cutmango.jpg">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<br><br>
 
 		<b>
-			Ingredients:
+	&nbsp;&nbsp;		Ingredients:
 		</b>
 		<br><br>
 		<i>
@@ -173,12 +236,12 @@ a natural acidity regulator all dipped in edible oil and salt to preserve it for
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mango, Garlic, Edible Oil, Chilli powder<br>
 			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Mixed spices, Asafoetida, Tumeric & Salt
 		</i>
-				<br><br>		<br><br>
-<a id="Product"><b>Product</b></a>
+				<br><br>		<br><br>&nbsp;&nbsp;
+<a id="Product" class="blackAnchor"><b>Product</b></a>
 <ul style="list-style-type:disc">
 	<li> 300g <br>
 		<ul style="list-style-type:none">
-			<li>	Nutrition Facts :<br><br>
+			<li>Nutrition Facts :<br><br>
 				<ul style="list-style-type:none">
 				<li> <table style="background-color:#cdd0e5"> <tr> <td>
 					<table style="border: 1px solid black; background-color:#cdd0e5"><tr ><th style="border-bottom: 1px solid black">Serving Size</th><th style="border-bottom: 1px solid black">100g</th></tr>
@@ -191,7 +254,7 @@ a natural acidity regulator all dipped in edible oil and salt to preserve it for
 					</table>
 				</li>
 <br>
-			<li> Price :<br></br>
+			<li>Price :<br>
 				<ul style="list-style-type:none">
 					<li> ₹55/- <font size="2em"><i>(Maximum Retail Price)</i></font></li>
 				</ul>
@@ -205,15 +268,15 @@ a natural acidity regulator all dipped in edible oil and salt to preserve it for
 <div style="float: right; margin-right:2em">
 		<br><br><br>
 		<b>
-		<a id="Feedback">Crafted at:</a><br>
+		<a id="Feedback" class="blackAnchor">Crafted at:</a><br>
 		</b>
 		<br>
 		<i>
-			Kedage & Co.<br>
+			<span class="glyphicon glyphicon-map-marker"></span>Kedage & Co.<br>
 			Varwadi, Pernankila,<br>
 			Udupi-576113<br>
-			Call us @ +91 7337836528<br>
-			info@kedage.in
+			<span class="glyphicon glyphicon-phone"></span> +91 7337836528<br>
+			<span class="glyphicon glyphicon-envelope"></span> info@kedage.in
 		</i>
 </div>
 </font>
